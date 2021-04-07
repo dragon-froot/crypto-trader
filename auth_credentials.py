@@ -1,3 +1,7 @@
-api_secret = "SMUVlOYhzwZQDAuYzcpAiOOJpPcqm0nWc+94MF/gS7ShfMBZw1HEATitGeIWvKX9ah8Fu7fnEeDYUzLJsN46iw=="
-api_key = "dae17376e12d406d6f6e8ad04b0509c4"
-api_pass = "fwl494yxb8g"
+api_secret = "oarjpizDkG0kRh3Z2Za7gb49jSKScRD6CiHwaI0+YduniiBglzgvQCWlsmyrFl6aKfxoc3fFfg0Y9IS9EeGJxQ=="
+api_key = "15ef30cab71efc97b10ee67270dc455e"
+api_pass = "3isqunq9y1z"
+
+PASSPHRASE="04zhtrdccig5"
+SECRET="0AI0/tFmFreKhVGcSUtSpuxYQT1B3n4kqK37kN4lni3Q9ZjSChzGFEavQcYDUfJ6PZ5xsAsg3DWcEcQ+zgMbww=="
+KEY="df94a0b09b243ee9fcbd991e1eb98309"

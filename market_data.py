@@ -6,36 +6,31 @@ class CoinData:
         self.url = "https://api.pro.coinbase.com"
     
 
-    def get_market_data(self):
+    def order_book(self):
         response = requests.get('{0}/products/{1}/book'.format(self.url, self.symbol)).json()
         return response
+    
+    def day_stats(self):
+        response = requests.get('{0}/products/{1}/stats'.format(self.url, self.symbol)).json()
 
-    # Get historical data for a given time range
-    def get_historical_data(self):
-        pass
+        return response
 
 
+    def historical_rates(self, dateRange):
+        response = requests.get('{0}/products/{1}/candles'.format(self.url, self.symbol)).json()
+
+        return r
 
 
-class Monitor:
-    def __init__(self, symbol, timeout):
-        self.symbol = symbol
-        self.timeout = timeout
-    # Make sure to provide a ticker and a timeout time
-    def monitor_pricing(self):
-        price = CoinData(self.symbol)
+symbol = "BTC-USD"
+coin = CoinData(symbol)
+historicalData = coin.historical_rates()
 
-        print(price.get_market_data())
-        time.sleep(self.timeout)
-
-# This function will grab the a value every X ammount of time and store it 
-def store_info(tp, currentCoinObj, previousCoinObj):
-    timePeriod = tp
+print(historicalData)
 
 
 
-while True:
-    Monitor("BTC-USD", 5).monitor_pricing()
+
 
 
 
