@@ -3,8 +3,8 @@
 def account_url():
     return 'https://api.pro.coinbase.com/accounts'
 
-def account_from_id_url(id):
-    return 'https://api.pro.coinbase.com/accounts/{0}'.format(id)
+def account_from_id_url(account_id):
+    return 'https://api.pro.coinbase.com/accounts/{0}'.format(account_id)
 
 # Post to this url to place order
 def place_order():
@@ -16,4 +16,12 @@ def place_order():
             "product_id": "BTC-USD"
         }
     """
+    return 'https://api.pro.coinbase.com/orders'
+
+def cancel_order(order_id):
+    # Take the ID from the order above and post here
+    return 'https://api.pro.coinbase.com/orders/{}'.format(order_id)
+
+# This function will return all fo the orders
+def get_orders():
     return 'https://api.pro.coinbase.com/orders'
