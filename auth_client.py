@@ -4,7 +4,7 @@ import time
 import base64
 import requests
 from requests.auth import AuthBase
-from auth_credentials import api_key, api_pass, api_secret, PASSPHRASE, KEY, SECRET
+from auth_credentials import PASSPHRASE, KEY, SECRET
 
 
 def get_auth_headers(timestamp, message, api_key, secret_key, passphrase):

@@ -25,3 +25,15 @@ def cancel_order(order_id):
 # This function will return all fo the orders
 def get_orders():
     return 'https://api.pro.coinbase.com/orders'
+
+def get_transfers():
+    return 'https://api.pro.coinbase.com/transfers'
+
+def get_currencies():
+    return 'https://api.pro.coinbase.com/currencies'
+
+def get_products():
+    return 'https://api.pro.coinbase.com/products'
+
+def get_product_by_id(product_id):
+    return 'https://api.pro.coinbase.com/product/{0}'.format(product_id)

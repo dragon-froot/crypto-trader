@@ -1,24 +1,20 @@
-import time
-from auth_client import CBAuth
+import time, requests
 from urls import *
-import requests
+from CoinAccount import Account
+from auth_client import CBAuth
+from MarketData import MarketData
 from auth_credentials import PASSPHRASE, KEY, SECRET
 
 auth = CBAuth(KEY, SECRET, PASSPHRASE)
+accountData = Account()
+marketData = MarketData()
 
-def test_accounts():
-    response = requests.get(account_url(), auth=auth).json()
-    accID=''
-    for i in response:
-        if i['currency'] == "BTC":
-            return i
-            
-    
-    get_wallet(accID)
-
-
-
+print(marketData.product_from_id("BTC-USD"))
     
 
-print(test_accounts())
-
+run = False
+while run:
+    for i in accountData.accounts():
+        if i['available'] != '0':
+            print(i)
+    
