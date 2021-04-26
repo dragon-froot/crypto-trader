@@ -32,6 +32,9 @@ def get_transfers():
 def get_currencies():
     return 'https://api.pro.coinbase.com/currencies'
 
+def get_currency_from_id(product_id):
+    return 'https://api.pro.coinbase.com/currencies/{0}'.format(product_id)
+
 def get_products():
     return 'https://api.pro.coinbase.com/products'
 
@@ -55,5 +58,5 @@ def get_historic_trades(product_id, start, end, timeslice):
 
 def get_24hr_stats(product_id):
     return 'https://api.pro.coinbase.com/products/{0}/stats'.format(product_id)
-    
+
     
