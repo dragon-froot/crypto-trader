@@ -9,7 +9,7 @@ auth = CBAuth(KEY, SECRET, PASSPHRASE)
 accountData = Account()
 marketData = MarketData()
 
-print(marketData.product_from_id("BTC-USD"))
+print(marketData.product_trades("BTC"))
     
 
 run = False
