@@ -7,4 +7,6 @@ from urls import *
 # Global variables
 auth = CBAuth(KEY, SECRET, PASSPHRASE)
 accountData = Account()
-marketData = MarketData()
+
+class Test(MarketData):
+        
